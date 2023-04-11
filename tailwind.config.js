@@ -45,10 +45,6 @@ module.exports = {
                 'light-6': '#EEEEEE',
             }
           },
-
-          lineHeight:{
-            '21':'21px'
-          }
       },
     },
     plugins: [],

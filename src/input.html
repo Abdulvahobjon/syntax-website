@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/dist/output.css" rel="stylesheet">
+</head>
+
+<body class="m-2">
+
+  <label class="border block w-full">
+    <span class="text-black font-medium text-base leading-6 mb-2 block">Label</span>
+    <input
+      class="border border-black-light-3 rounded py-3 px-4 block w-full font-normal text-base leading-6  mb-2 focus:outline-2 focus:outline-navy-regular placeholder:text-black-light-2 "
+      placeholder="Placeholder text" type="text">
+    <span class="block w-full text-xs text-black-light-2 leading-normal">Caption</span>
+  </label>
+
+  <br>
+
+  <label for="country" class="block text-sm font-medium leading-6 text-gray-900">
+    <span class="text-black font-medium text-base leading-6 mb-2 block">Label</span>
+    <select class="
+        px-4 py-3 block w-full border border-black-light-3 rounded font-normal text-black-light-2 text-base leading-normal focus:outline-2 focus:outline-navy-regular 
+        ">
+      <option class="text-black-regular p-4 ">United States</option>
+      <option class="text-black-regular p-4 ">Canada</option>
+      <option class="text-black-regular p-4 ">Mexico</option>
+    </select>
+    <span class="block w-full text-xs text-black-light-2 leading-normal">Caption</span>
+  </label>
+
+  <br>
+
+  <label for="country" class="block text-sm font-medium leading-6 text-gray-900">
+    <span class="text-black font-medium text-base leading-6 mb-2 block">Label</span>
+    <select class="
+        px-4 py-3 block w-full border border-black-light-3 rounded font-normal text-black-light-2 text-base leading-normal focus:outline-2 focus:outline-navy-regular  after:hidden before:hidden
+        ">
+      <option class="text-black-regular p-4 ">United States</option>
+      <option class="text-black-regular p-4 ">Canada</option>
+      <option class="text-black-regular p-4 ">Mexico</option>
+    </select>
+    <span class="block w-full text-xs text-black-light-2 leading-normal">Caption</span>
+  </label>
+
+  <div class="relative w-full ">
+    <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+      <svg width="16" class="w-4 h-4 text-gray-500 dark:text-gray-400" height="17" viewBox="0 0 16 17" fill="none"
+        xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M14 14.5L10.5355 11.0355M10.5355 11.0355C11.4404 10.1307 12 8.88071 12 7.5C12 4.73858 9.76142 2.5 7 2.5C4.23858 2.5 2 4.73858 2 7.5C2 10.2614 4.23858 12.5 7 12.5C8.38071 12.5 9.63071 11.9404 10.5355 11.0355Z"
+          stroke="#5F5F5F" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+      </svg>
+
+    </div>
+    <input type="search" id="simple-search"
+      class=" border border-black-light-3 rounded py-3 px-4 block w-full  text-sm font-normal text-black-regular leading-6  mb-2  focus:outline-2 outline-offset-2 focus:outline-navy-regular focus:border-transparent   placeholder:text-black-light-2 pl-9 "
+      placeholder="Placeholder text" required>
+  </div>
+
+  <label class="border block w-full">
+    <span class="text-black font-medium text-base leading-6 mb-2 block">Label</span>
+    <input
+      class="border border-black-light-3 rounded py-3 px-4 block w-full font-normal text-base leading-6  mb-2 focus:outline-2 focus:outline-navy-regular placeholder:text-black-light-2 "
+      placeholder="Placeholder text" type="date">
+    <span class="block w-full text-xs text-black-light-2 leading-normal">Caption</span>
+  </label>
+
+
+  <div class="flex items-center justify-center w-full">
+    <label for="dropzone-file" class="flex flex-col items-center justify-center w-full h-64 border-[1.5px] border-black-light-3 border-dashed rounded-md cursor-pointer bg-white   hover:border-navy-light-1 ">
+        <div class="flex flex-col items-center justify-center pt-[52px]  pb-12">
+          <svg width="48" class="mb-2" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M28 8H12C10.9391 8 9.92172 8.42143 9.17157 9.17157C8.42143 9.92172 8 10.9391 8 12V32M8 32V36C8 37.0609 8.42143 38.0783 9.17157 38.8284C9.92172 39.5786 10.9391 40 12 40H36C37.0609 40 38.0783 39.5786 38.8284 38.8284C39.5786 38.0783 40 37.0609 40 36V28M8 32L17.172 22.828C17.9221 22.0781 18.9393 21.6569 20 21.6569C21.0607 21.6569 22.0779 22.0781 22.828 22.828L28 28M40 20V28M40 28L36.828 24.828C36.0779 24.0781 35.0607 23.6569 34 23.6569C32.9393 23.6569 31.9221 24.0781 31.172 24.828L28 28M28 28L32 32M36 8H44M40 4V12M28 16H28.02" stroke="#5F5F5F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            
+            <p class="mb-1 text-sm leading-normal text-black-light-2"><span class="font-medium text-base leading-normal  ">Upload a file</span> or drag and drop</p>
+            <p class="text-xs text-black-light-2 leading-normal ">.csv or .xlsx up to 10MB</p>
+        </div>
+        <input id="dropzone-file" type="file" class="hidden" />
+    </label>
+</div> 
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

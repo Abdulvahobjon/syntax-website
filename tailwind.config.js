@@ -37,6 +37,7 @@ module.exports = {
                 'light-1':'#F7DCDC'
             },
             black:{
+                "regular":'#000000',
                 'light-1': '#333333',
                 'light-2': '#5F5F5F',
                 'light-3': '#A1A1A1',

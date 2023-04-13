@@ -3,3 +3,8 @@
 @tailwind utilities;
 
 
+@layer components {
+    .pagination a.active{
+        @apply bg-navy-regular text-white
+    }
+}
